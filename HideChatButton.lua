@@ -178,10 +178,8 @@ function ChatEdit_ActivateChat( frame ) -- thanks Treader of Cenarion Circle
 end
 
 function RenderChatOnStartup ( frame )
-  if HCBchatIsShown == true then
-    HCBframe:ShowChat( )
-  else
-    HCBframe:HideChat( )
+  if HCBchatIsShown == false then
+    HCBframe:ToggleVisible( )
   end
 end
 
