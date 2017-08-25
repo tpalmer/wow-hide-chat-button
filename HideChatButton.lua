@@ -98,6 +98,7 @@ HCBframe.HideChat = function( frame )
     end
     GeneralDockManager:Hide( )   -- tabs
     ChatFrameMenuButton:Hide( )  -- menu button
+    QuickJoinToastButton:Hide( )   -- friends micro button
     frame.ChatIsShown = false        -- toggle shown state
 end
 
@@ -107,6 +108,7 @@ HCBframe.ShowChat = function( frame )
     GeneralDockManager.Show = GeneralDockManager.HCBOverrideShow
     GeneralDockManager:Show( )   -- the tabs
     ChatFrameMenuButton:Show( )  -- menu button
+    QuickJoinToastButton:Show( )   -- friends micro button
 
     for i = 1, NUM_CHAT_WINDOWS do
         -- chats
